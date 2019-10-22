@@ -1,0 +1,13 @@
+
+/* ------------------- Default Styles v01 ------------------- */
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Poiret+One&display=swap');
+
+:root {
+    --pc: hsl(270, 100%, 30%);
+    --sc: hsl(210, 100%, 70%);
+    --tc: hsl(60, 100%, 45%);
+    --po: 'Poiret One';
+    --ebg: 'EB Garamond';
+}
+
+body {margin: 0;}
