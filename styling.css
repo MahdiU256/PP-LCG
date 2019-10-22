@@ -3,9 +3,9 @@
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond|Poiret+One&display=swap');
 
 :root {
-    --pc: hsl(270, 100%, 30%);
-    --sc: hsl(210, 100%, 70%);
-    --tc: hsl(60, 100%, 45%);
+    --pc: hsl(270, 60%, 35%);
+    --sc: hsl(45, 20%, 90%);
+    --tc: hsl(135, 80%, 0%);
     --po: 'Poiret One';
     --ebg: 'EB Garamond';
 }
@@ -15,6 +15,7 @@ body {margin: 0;}
 /* ------------------- Alert Box Styles v05 ------------------- */
 /* The alert container */
 #alertContainer {
+    display: none; /* TEMPORARY CHANGE */
     background-color: var(--pc);
     color: white;
     margin: 0;
@@ -80,4 +81,57 @@ body {margin: 0;}
 /* When moving the mouse over the close button */
 #closeBtn:hover {
 	color: red;
+}
+
+/* ------------------- Main Page Styles v01 ------------------- */
+#container {
+    color: white;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Header Section Styles */
+#headerContainer {
+    background-color: var(--pc);
+    display: block;
+    position: relative;
+    width: 100vw;
+    height: 10vh;
+    margin: auto;
+    padding: 1vh 0;
+    font-family: var(--ebg);
+}
+
+#headerTitle {
+    display: block;
+    margin: 1vh 0;
+    font-family: var(--po);
+    font-size: 4vh;
+    font-weight: bolder;
+}
+
+#headerSubtitle {
+    display: block;
+    margin: 1vh 0;
+}
+
+/* Content Section Styles */
+#contentContainer {
+    background-color: var(--sc);
+    width: 100vw;
+    height: 80vh;
+}
+
+
+
+/* Footer Section Styles */
+#footerContainer {
+    background-color: var(--tc);
+    display: block;
+    margin: auto;
+    padding: 2.85vh 0;
+    font-size: 2vh;
 }
