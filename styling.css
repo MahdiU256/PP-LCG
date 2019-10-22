@@ -1,4 +1,4 @@
-/* ------------------- styling.css v1.0.0 ------------------- */
+/* ------------------- styling.css v1.0.1 ------------------- */
 /* ------------------- Default Styles v02 ------------------- */
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond|Poiret+One&display=swap');
 
@@ -12,7 +12,7 @@
 
 body {margin: 0;}
 
-/* ------------------- Alert Box Styles v06 ------------------- */
+/* ------------------- Alert Box Styles v07 ------------------- */
 /* The alert container */
 #alertContainer {
     background-color: var(--pc);
@@ -45,14 +45,13 @@ body {margin: 0;}
 
 /* The alert message button */
 #introBtn {
-    background-color: var(--sc);
-    color: var(--tc);
+    background-color: var(--tc);
+    color: var(--sc);
     border: 2px solid #fff;
     border-radius: 5px;;
-    padding: 5px 10px;
-    font-family: var(--po, 'serif');
-    font-size: 3vh;
-    font-weight: bolder;
+    padding: 5px 20px;
+    font-family: var(--ebg, 'serif');
+    font-size: 3.5vh;
 }
 
 #introBtn:active {
