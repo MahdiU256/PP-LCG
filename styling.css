@@ -11,3 +11,15 @@
 }
 
 body {margin: 0;}
+
+/* ------------------- Alert Box Styles v01 ------------------- */
+/* The alert container */
+#alertContainer {
+    background-color: var(--pc);
+    color: white;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
