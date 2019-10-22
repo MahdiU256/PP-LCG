@@ -32,7 +32,24 @@
         <!-- Content Section -->
         <section id="contentContainer">
             <div id="contentInner">
-                
+                <form id="game">
+                    <!-- Answer Boxes -->
+                    <div class="ansContainer">
+                        <label for="boxA" id="resultA">Result A</label>
+                        <input id="boxA" type="number" min="1" max="99" placeholder="Enter your guess here..." autofocus required />
+                    </div>
+                    <div class="ansContainer">
+                        <label for="boxB" id="resultB">Result B</label>
+                        <input id="boxB" type="number" min="1" max="99" placeholder="Enter your guess here..." required />
+                    </div>
+                    <div class="ansContainer">
+                        <label for="boxC" id="resultC">Result C</label>
+                        <input id="boxC" type="number" min="1" max="99" placeholder="Enter your guess here..." required />
+                    </div>
+
+                    <!-- 'Submit Answer' button -->
+                    <input id="gameSubmit" type="submit" name="submit" value="Submit Answer" />
+                </form>
             </div>
         </section>
         
