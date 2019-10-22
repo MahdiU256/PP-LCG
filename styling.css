@@ -12,7 +12,7 @@
 
 body {margin: 0;}
 
-/* ------------------- Alert Box Styles v04 ------------------- */
+/* ------------------- Alert Box Styles v05 ------------------- */
 /* The alert container */
 #alertContainer {
     background-color: var(--pc);
@@ -59,4 +59,25 @@ body {margin: 0;}
     background-color: var(--pc);
     color: white;
     border: 1px solid #fff;
+}
+
+/* The close button */
+#closeBtn {
+    display: none;
+    position: relative;
+    top: 5px;
+    right: 10px;
+	color: white;
+	font-weight: bold;
+	float: right;
+	font-size: 22px;
+	line-height: 20px;
+    cursor: pointer;
+    opacity: 1;
+	transition: opacity 0.3s;
+}
+
+/* When moving the mouse over the close button */
+#closeBtn:hover {
+	color: red;
 }
