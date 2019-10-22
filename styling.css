@@ -12,7 +12,7 @@
 
 body {margin: 0;}
 
-/* ------------------- Alert Box Styles v02 ------------------- */
+/* ------------------- Alert Box Styles v03 ------------------- */
 /* The alert container */
 #alertContainer {
     background-color: var(--pc);
@@ -33,4 +33,12 @@ body {margin: 0;}
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+/* The alert message */
+#introText {
+    margin-bottom: 2.5vh;
+    font-family: var(--po, 'cursive');
+    font-size: 5vh;
+    font-weight: bolder;
 }
