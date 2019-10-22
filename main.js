@@ -1,3 +1,7 @@
+let r1 = Math.floor((Math.random() * 98) + 1);
+let r2 = Math.floor((Math.random() * 98) + 1);
+let r3 = Math.floor((Math.random() * 98) + 1);
+
 function intro1() {
 	$('#introText').css('margin', '20px 5px');
 	$('#intro').css('top', '35vh');
