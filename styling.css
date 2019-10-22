@@ -1,0 +1,83 @@
+
+/* ------------------- Default Styles v01 ------------------- */
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Poiret+One&display=swap');
+
+:root {
+    --pc: hsl(270, 100%, 30%);
+    --sc: hsl(210, 100%, 70%);
+    --tc: hsl(60, 100%, 45%);
+    --po: 'Poiret One';
+    --ebg: 'EB Garamond';
+}
+
+body {margin: 0;}
+
+/* ------------------- Alert Box Styles v05 ------------------- */
+/* The alert container */
+#alertContainer {
+    background-color: var(--pc);
+    color: white;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+/* The alert message box */
+#intro {
+    position: relative;
+    top: 40vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* The alert message */
+#introText {
+    margin-bottom: 2.5vh;
+    font-family: var(--po, 'cursive');
+    font-size: 5vh;
+    font-weight: bolder;
+}
+
+/* The alert message button */
+#introBtn {
+    background-color: var(--sc);
+    color: var(--tc);
+    border: 2px solid #fff;
+    border-radius: 5px;;
+    padding: 5px 10px;
+    font-family: var(--po, 'serif');
+    font-size: 3vh;
+    font-weight: bolder;
+}
+
+#introBtn:active {
+    background-color: var(--pc);
+    color: white;
+    border: 1px solid #fff;
+}
+
+/* The close button */
+#closeBtn {
+    display: none;
+    position: relative;
+    top: 5px;
+    right: 10px;
+	color: white;
+	font-weight: bold;
+	float: right;
+	font-size: 22px;
+	line-height: 20px;
+    cursor: pointer;
+    opacity: 1;
+	transition: opacity 0.3s;
+}
+
+/* When moving the mouse over the close button */
+#closeBtn:hover {
+	color: red;
+}
