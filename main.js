@@ -23,7 +23,9 @@ $(document).ready(function() {
                     $('#closeBtn').css('display', 'block');
                     $('#introText').html("To start playing, click on the white X on the top-right corner of the page.");
 
-                    
+                    $('#closeBtn').click(function() {
+                        $('#alertContainer').css('display', 'none');
+                    });
                 });
             });
         });
