@@ -3,7 +3,7 @@ $(document).ready(function() {
     $('#introBtn').click(function () {
         $('#introText').css('margin', '20px 5px');
         $('#intro').css('top', '35vh');
-        $('#introText').html('In this game, three numbers are randomly selected to form a combination, which you have to guess using the given text boxes.');
+        $('#introText').html('In this game, three numbers are randomly selected to form a combination, which you have to guess by typing your guesses into the given boxes.');
         
         // Intro Alert - Second click event
         $('#introBtn').click(function () {
@@ -22,7 +22,8 @@ $(document).ready(function() {
                     $('#introBtn').css('display', 'none');
                     $('#closeBtn').css('display', 'block');
                     $('#introText').html("To start playing, click on the white X on the top-right corner of the page.");
-
+                    
+                    // Intro Alert - Fifth click event
                     $('#closeBtn').click(function() {
                         $('#alertContainer').css('display', 'none');
                     });
