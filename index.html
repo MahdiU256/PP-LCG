@@ -8,6 +8,7 @@
     <title>Lock Combo Guesser</title>
 </head>
 <body>
+    <!-- index.html v1.0.0 -->
     <!-- Introductory Alert Box -->
     <article id="alertContainer">
         <section id="alertInner">
@@ -34,22 +35,34 @@
             <div id="contentInner">
                 <form id="game">
                     <!-- Answer Boxes -->
-                    <div class="ansContainer">
-                        <label for="boxA" id="resultA">Result A</label>
-                        <input id="boxA" type="number" min="1" max="99" placeholder="Enter your guess here..." autofocus required />
+                    <div id="ansDiv">
+                        <div class="ansContainer">
+                            <span id="highA" class="high">High</span>
+                            <input id="boxA" class="box" type="number" min="1" max="99" placeholder="Answer 1" autofocus required />
+                            <span id="lowA" class="low">Low</span>
+                        </div>
+                        <div class="ansContainer">
+                            <span id="highB" class="high">High</span>
+                            <input id="boxB" class="box" type="number" min="1" max="99" placeholder="Answer 2" required />
+                            <span id="lowB" class="low">Low</span>
+                        </div>
+                        <div class="ansContainer">
+                            <span id="highC" class="high">High</span>
+                            <input id="boxC" class="box" type="number" min="1" max="99" placeholder="Answer 3" required />
+                            <span id="lowC" class="low">Low</span>
+                        </div>
                     </div>
-                    <div class="ansContainer">
-                        <label for="boxB" id="resultB">Result B</label>
-                        <input id="boxB" type="number" min="1" max="99" placeholder="Enter your guess here..." required />
-                    </div>
-                    <div class="ansContainer">
-                        <label for="boxC" id="resultC">Result C</label>
-                        <input id="boxC" type="number" min="1" max="99" placeholder="Enter your guess here..." required />
-                    </div>
-
+                    
                     <!-- 'Submit Answer' button -->
-                    <input id="gameSubmit" type="submit" name="submit" value="Submit Answer" />
+                    <div id="submitDiv">
+                        <input id="gameSubmit" type="submit" name="submit" value="Submit Answer" />
+                    </div>
                 </form>
+
+                <!-- Combination -->
+                <div id="combination">
+                    The combination was: <span id="combo">20-30-40</span>!
+                </div>
             </div>
         </section>
         
