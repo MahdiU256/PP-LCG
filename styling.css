@@ -12,7 +12,7 @@
 
 body {margin: 0;}
 
-/* ------------------- Alert Box Styles v03 ------------------- */
+/* ------------------- Alert Box Styles v04 ------------------- */
 /* The alert container */
 #alertContainer {
     background-color: var(--pc);
@@ -41,4 +41,22 @@ body {margin: 0;}
     font-family: var(--po, 'cursive');
     font-size: 5vh;
     font-weight: bolder;
+}
+
+/* The alert message button */
+#introBtn {
+    background-color: var(--sc);
+    color: var(--tc);
+    border: 2px solid #fff;
+    border-radius: 5px;;
+    padding: 5px 10px;
+    font-family: var(--po, 'serif');
+    font-size: 3vh;
+    font-weight: bolder;
+}
+
+#introBtn:active {
+    background-color: var(--pc);
+    color: white;
+    border: 1px solid #fff;
 }
