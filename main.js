@@ -1,9 +1,12 @@
+// ------------------------------- Variables ------------------------------- //
 let r1 = Math.floor((Math.random() * 98) + 1);
 let r2 = Math.floor((Math.random() * 98) + 1);
 let r3 = Math.floor((Math.random() * 98) + 1);
 
+// ------------------------------- Functions ------------------------------- //
+// ---------------- Intro Section ---------------- //
 function intro1() {
-	$('#introText').css('margin', '20px 5px');
+    $('#introText').css('margin', '20px 5px');
 	$('#intro').css('top', '35vh');
 	$('#introText').html(
 		'In this game, three numbers are randomly selected to form a combination, which you have to guess by typing your guesses into the given boxes.'
@@ -17,7 +20,7 @@ function intro2() {
     $('#intro').css('top', '35vh');
     $('#introText').html(
         'The numbers will be between 1 and 99. When you have made your guess, click on the "Submit Answer" button.'
-    );
+        );
 
     // Intro Alert - Third click event
     $('#introBtn').click(intro3);
@@ -37,21 +40,21 @@ function intro3() {
 function intro4() {
     $('#intro').css('top', '40vh');
     $('#introBtn').css('display', 'none');
-    $('#closeBtn').css('display', 'block');
     $('#introText').html(
         'To start playing, click on the white X on the top-right corner of the page.'
     );
-
-    // Intro Alert - Fifth click event
-    $('#closeBtn').click(intro5);
 }
 
-function intro5() {
+// ---------------- Close Intro ---------------- //
+function closeBtn() {
     $('#alertContainer').css('display', 'none');
     $('#container').css('display', 'block');
 }
 
+// ---------------- Document Ready ---------------- //
 $(document).ready(function() {
-	// Intro Alert - First click event
+    // Give user the option to close alert if they've read the intro before
+    $('#closeBtn').click(closeBtn);
+    // Intro Alert - First click event
 	$('#introBtn').click(intro1);
 });
