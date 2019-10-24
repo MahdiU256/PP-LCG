@@ -3,6 +3,10 @@ let r1 = Math.floor((Math.random() * 98) + 1);
 let r2 = Math.floor((Math.random() * 98) + 1);
 let r3 = Math.floor((Math.random() * 98) + 1);
 
+let boxArr = [$('#boxA'), $('#boxB'), $('#boxC')];
+
+let comboArr = [r1, r2, r3];
+
 // ------------------------------- Functions ------------------------------- //
 // ---------------- Intro Section ---------------- //
 function intro1() {
@@ -67,10 +71,70 @@ function comboGen() {
     }
 
     let combo = r1 + '-' + r2 + '-' + r3;
-    
-    console.log(r1, r2, r3, combo);
+    comboArr = [r1, r2, r3];
+
+    console.log(r1, r2, r3, combo, comboArr);
 
     $('#combo').html(combo);
+
+    $('#game').submit(checkAns);
+}
+
+// ---------------- Game Logic - Combination Checker ---------------- //
+
+function checkAns(e) {
+    e.preventDefault();
+
+    // #boxA's input checker
+    if (boxArr[0][0].value == comboArr[0]) {
+        $('#lowA').css('display', 'none');
+        $('#highA').css('display', 'block');
+        $('#highA').html('Correct!');
+    } else if (boxArr[0][0].value >= comboArr[0]) {
+        $('#lowA').css('display', 'none');
+        $('#highA').css('display', 'block');
+        $('#highA').html('High');
+    } else if (boxArr[0][0].value <= comboArr[0]) {
+        $('#highA').css('display', 'none');
+        $('#lowA').css('display', 'block');
+    } else {
+        $('#lowA').css('display', 'none');
+        $('#highA').css('display', 'none');
+    }
+
+    // #boxB's input checker
+    if (boxArr[1][0].value == comboArr[1]) {
+        $('#lowB').css('display', 'none');
+        $('#highB').css('display', 'block');
+        $('#highB').html('Correct!');
+    } else if (boxArr[1][0].value >= comboArr[1]) {
+        $('#lowB').css('display', 'none');
+        $('#highB').css('display', 'block');
+        $('#highB').html('High');
+    } else if (boxArr[1][0].value <= comboArr[1]) {
+        $('#highB').css('display', 'none');
+        $('#lowB').css('display', 'block');
+    } else {
+        $('#lowB').css('display', 'none');
+        $('#highB').css('display', 'none');
+    }
+    
+    // #boxC's input checker
+    if (boxArr[2][0].value == comboArr[2]) {
+        $('#lowC').css('display', 'none');
+        $('#highC').css('display', 'block');
+        $('#highC').html('Correct!');
+    } else if (boxArr[2][0].value >= comboArr[2]) {
+        $('#lowC').css('display', 'none');
+        $('#highC').css('display', 'block');
+        $('#highC').html('High');
+    } else if (boxArr[2][0].value <= comboArr[2]) {
+        $('#highC').css('display', 'none');
+        $('#lowC').css('display', 'block');
+    } else {
+        $('#lowC').css('display', 'none');
+        $('#highC').css('display', 'none');
+    }
 }
 
 // ---------------- Document Ready ---------------- //
