@@ -188,8 +188,8 @@ function gameOver() {
 	$('<button id="gameReset"></button>').appendTo(
 		$('#contentInner')
 	);
-    $('#gameReset').html('Reset Game');
-    $('#gameReset').css({
+	$('#gameReset').html('Reset Game');
+	$('#gameReset').css({
 		'background-color' : 'var(--pc)',
 		'color'            : 'var(--sc)',
 		'border'           : '5px solid var(--tc)',
@@ -200,6 +200,13 @@ function gameOver() {
 		'position'         : 'relative',
 		'top'              : '37.5vh'
 	});
+
+	$('#gameReset').click(resetGame);
+}
+
+// ---------------- Game Logic - Reset Game ---------------- //
+function resetGame() {
+    location.reload();
 }
 
 // ---------------- Document Ready ---------------- //
