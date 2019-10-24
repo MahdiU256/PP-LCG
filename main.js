@@ -49,6 +49,28 @@ function intro4() {
 function closeBtn() {
     $('#alertContainer').css('display', 'none');
     $('#container').css('display', 'block');
+    
+    comboGen();
+}
+
+// ---------------- Game Logic - Combination Generator ---------------- //
+
+function comboGen() {
+    r1 = Math.floor((Math.random() * 98) + 1);
+    r2 = Math.floor((Math.random() * 98) + 1);
+    r3 = Math.floor((Math.random() * 98) + 1);
+
+    if (r1 == r2 && r1 == r3 || r1 == r2 || r1 == r3 || r2 == r3) {
+        r1 = Math.floor((Math.random() * 98) + 1);
+        r2 = Math.floor((Math.random() * 98) + 1);
+        r3 = Math.floor((Math.random() * 98) + 1);
+    }
+
+    let combo = r1 + '-' + r2 + '-' + r3;
+    
+    console.log(r1, r2, r3, combo);
+
+    $('#combo').html(combo);
 }
 
 // ---------------- Document Ready ---------------- //
