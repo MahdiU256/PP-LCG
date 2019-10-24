@@ -1,5 +1,5 @@
-/* ------------------- styling.css v1.0.1 ------------------- */
-/* ------------------- Default Styles v02 ------------------- */
+/* ------------------- styling.css v1.0.2 ------------------- */
+/* ------------------- Default Styles v03 ------------------- */
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond|Poiret+One&display=swap');
 
 :root {
@@ -12,7 +12,14 @@
 
 body {margin: 0;}
 
-/* ------------------- Alert Box Styles v07 ------------------- */
+#logo {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* ------------------- Alert Box Styles v08 ------------------- */
 /* The alert container */
 #alertContainer {
     background-color: var(--pc);
@@ -62,7 +69,7 @@ body {margin: 0;}
 
 /* The close button */
 #closeBtn {
-    display: none;
+    display: block;
     position: relative;
     top: 5px;
     right: 10px;
