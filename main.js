@@ -1,3 +1,4 @@
+// ----------------------------- main.js v1.0.0 ----------------------------- //
 // ------------------------------- Variables ------------------------------- //
 let r1 = Math.floor(Math.random() * 98 + 1);
 let r2 = Math.floor(Math.random() * 98 + 1);
@@ -84,8 +85,6 @@ function comboGen() {
 		r2,
 		r3
 	];
-
-	console.log(r1, r2, r3, combo, comboArr);
 
 	$('#combo').html(combo);
 
